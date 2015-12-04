@@ -19,8 +19,12 @@
 	<script src="/js/factories/album.js"></script>
 	<script src="/js/factories/song.js"></script>
 	<script src="/js/factories/artist.js"></script>
-	<script src="/js/states/albumStates.js"></script>
-	<script src="/js/states/artistStates.js"></script>
+	<script src="/js/states/albumsState.js"></script>
+	<script src="/js/states/artistsStates.js"></script>
+	<script src="/js/states/albumState.js"></script>
+	<script src="/js/states/artistState.js"></script>
+
+
 </head>
 <body ng-app="juke">
 	<div id="main" class="container-fluid">
@@ -29,7 +33,7 @@
 			<sidebar ng-controller="MenuCtrl">
 				<section>
 					<h4 class="playlist-item">
-						<a ng-click="viewAlbums()" ui-sref="albumList">ALBUMS</a>
+						<a ng-click="viewAlbums()" ui-sref="albumsList">ALBUMS</a>
 					</h4>
 				</section>
 				<section>
@@ -41,7 +45,13 @@
 		</div>
 
 		<div class="col-xs-10">
-			<ui-view></ui-view>
+			<ui-view>
+			<!-- <div>
+				<ui-view>
+				</ui-view>
+			</div> -->
+
+			</ui-view>
 <!-- 			<div ng-controller="ArtistsCtrl" ng-show="showMe">
 				<h3>Artists</h3>
 				<div class="list-group">

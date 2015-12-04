@@ -1,5 +1,5 @@
 app.config(function ($stateProvider) {
-  $stateProvider.state('albumList', {
+  $stateProvider.state('albumsList', {
       url: '/albums',
       templateUrl: '/stateTemplates/albums.html',
       controller: function ($scope, AlbumFactory) {
