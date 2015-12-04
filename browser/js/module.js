@@ -1,1 +1,1 @@
-var app = angular.module('juke', []);
+var app = angular.module('juke', ['ui.router']);
